@@ -5,14 +5,13 @@
     <link>https://shaqok.github.io/</link>
     <description>Recent content on daniel-dev</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 28 Mar 2022 15:08:18 -0500</lastBuildDate><atom:link href="https://shaqok.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://shaqok.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
-      <link>https://shaqok.github.io/post/about/about/</link>
-      <pubDate>Mon, 28 Mar 2022 15:08:18 -0500</pubDate>
+      <link>https://shaqok.github.io/about/</link>
+      <pubDate>Mon, 28 Mar 2022 22:36:47 -0500</pubDate>
       
-      <guid>https://shaqok.github.io/post/about/about/</guid>
+      <guid>https://shaqok.github.io/about/</guid>
       <description>Hi, welcome to my blog! I am Daniel Daeyeon Kim and I am an international student from South Korea at Carleton College, Northfield, MN - Class of 2023. I major in Computer Science and also recently started to explore Statistics, which led me to work at Carleton ITS DataSquad as a current student programming assistant. My primary interests in CS are building user-friendly services and learning new skills or languages, and I am planning to expand my interests more and more!</description>
     </item>
     
