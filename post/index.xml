@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>daniel-dev</title>
-    <link>https://shaqok.github.io/</link>
-    <description>Recent content on daniel-dev</description>
+    <title>Posts on daniel-dev</title>
+    <link>https://shaqok.github.io/post/</link>
+    <description>Recent content in Posts on daniel-dev</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 28 Mar 2022 15:08:18 -0500</lastBuildDate><atom:link href="https://shaqok.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 28 Mar 2022 15:08:18 -0500</lastBuildDate><atom:link href="https://shaqok.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
       <link>https://shaqok.github.io/post/about/about/</link>
