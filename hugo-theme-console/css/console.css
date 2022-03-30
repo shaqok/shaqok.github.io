@@ -199,6 +199,11 @@ figure {
     top: 0;
 }
 
+.posts-list-no-date {
+    position: relative;
+    top: 0;
+}
+
 .post h1, .post h2 {
     padding-top: 0;
     margin: 0;

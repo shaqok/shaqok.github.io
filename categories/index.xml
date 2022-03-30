@@ -5,6 +5,16 @@
     <link>https://shaqok.github.io/categories/</link>
     <description>Recent content in Categories on daniel-dev</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://shaqok.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Tue, 29 Mar 2022 23:53:05 -0500</lastBuildDate><atom:link href="https://shaqok.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>shell</title>
+      <link>https://shaqok.github.io/categories/shell/</link>
+      <pubDate>Tue, 29 Mar 2022 23:53:05 -0500</pubDate>
+      
+      <guid>https://shaqok.github.io/categories/shell/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

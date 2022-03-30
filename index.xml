@@ -5,7 +5,18 @@
     <link>https://shaqok.github.io/</link>
     <description>Recent content on daniel-dev</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://shaqok.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Tue, 29 Mar 2022 23:53:05 -0500</lastBuildDate><atom:link href="https://shaqok.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Writing a simple shell</title>
+      <link>https://shaqok.github.io/posts/writing-a-simple-shell/</link>
+      <pubDate>Tue, 29 Mar 2022 23:53:05 -0500</pubDate>
+      
+      <guid>https://shaqok.github.io/posts/writing-a-simple-shell/</guid>
+      <description>Hi! This would be my first blog post on this new setting. I do have some posts on my previous blog, but that&amp;rsquo;ll take some time to migrate everything at once. I am probably going to update those whenever I&amp;rsquo;m available, so hope you enjoy my other posts later!
+For this one, I wanted to share my first experience in writing a simple shell script that reduces your time whenever you try to push something to Github.</description>
+    </item>
+    
     <item>
       <title>About</title>
       <link>https://shaqok.github.io/about/</link>
