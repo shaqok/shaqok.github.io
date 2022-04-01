@@ -6,9 +6,19 @@
     <description>Recent content on daniel-dev</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 29 Mar 2022 23:53:05 -0500</lastBuildDate><atom:link href="https://shaqok.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 01 Apr 2022 00:06:53 -0500</lastBuildDate><atom:link href="https://shaqok.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Writing a simple shell</title>
+      <title>Writing a Simple Shell 2</title>
+      <link>https://shaqok.github.io/posts/writing-a-simple-shell2/</link>
+      <pubDate>Fri, 01 Apr 2022 00:06:53 -0500</pubDate>
+      
+      <guid>https://shaqok.github.io/posts/writing-a-simple-shell2/</guid>
+      <description>Hi! I came back with another simple bash shell script for organizing the file directories. I was keep working on my leetcode practice as usual, and this time I got annoyed by creating a new directory for problem each time I solve. My repository has a structure like below:
+└── problem_type1 ├── problem_1 │ └── Problem.md │ └── problem_1.js ├── problem_2 │ └── Problem.md │ └── problem_2.js │ problem_type2 ├── problem_1 │ └── Problem.</description>
+    </item>
+    
+    <item>
+      <title>Writing a Simple Shell</title>
       <link>https://shaqok.github.io/posts/writing-a-simple-shell/</link>
       <pubDate>Tue, 29 Mar 2022 23:53:05 -0500</pubDate>
       

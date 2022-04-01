@@ -6,11 +6,20 @@
     <description>Recent content in Tags on daniel-dev</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 29 Mar 2022 23:53:05 -0500</lastBuildDate><atom:link href="https://shaqok.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 01 Apr 2022 00:06:53 -0500</lastBuildDate><atom:link href="https://shaqok.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>bash</title>
+      <link>https://shaqok.github.io/tags/bash/</link>
+      <pubDate>Fri, 01 Apr 2022 00:06:53 -0500</pubDate>
+      
+      <guid>https://shaqok.github.io/tags/bash/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>hugo</title>
       <link>https://shaqok.github.io/tags/hugo/</link>
-      <pubDate>Tue, 29 Mar 2022 23:53:05 -0500</pubDate>
+      <pubDate>Fri, 01 Apr 2022 00:06:53 -0500</pubDate>
       
       <guid>https://shaqok.github.io/tags/hugo/</guid>
       <description></description>
@@ -19,7 +28,7 @@
     <item>
       <title>shell</title>
       <link>https://shaqok.github.io/tags/shell/</link>
-      <pubDate>Tue, 29 Mar 2022 23:53:05 -0500</pubDate>
+      <pubDate>Fri, 01 Apr 2022 00:06:53 -0500</pubDate>
       
       <guid>https://shaqok.github.io/tags/shell/</guid>
       <description></description>
