@@ -6,6 +6,7 @@ import { graphql } from 'gatsby'
 import { IGatsbyImageData } from 'gatsby-plugin-image'
 import queryString, { ParsedQuery } from 'query-string'
 import { PostListItemType } from 'types/PostItem.types'
+import { siteType } from 'types/siteData.type'
 import Template from 'components/Common/Template'
 
 type IndexPageProps = {
@@ -13,13 +14,7 @@ type IndexPageProps = {
     search: string
   }
   data: {
-    site: {
-      siteMetadata: {
-        title: string
-        description: string
-        siteUrl: string
-      }
-    }
+    site: siteType
     allMarkdownRemark: {
       edges: PostListItemType[]
     }
@@ -36,7 +31,7 @@ const IndexPage: FunctionComponent<IndexPageProps> = ({
   location: { search },
   data: {
     site: {
-      siteMetadata: { title, description, siteUrl },
+      siteMetadata: { title, description, siteUrl, menuLinks },
     },
     allMarkdownRemark: { edges },
     file: {
@@ -78,8 +73,9 @@ const IndexPage: FunctionComponent<IndexPageProps> = ({
     <Template
       title={title}
       description={description}
-      url={siteUrl}
+      siteUrl={siteUrl}
       image={publicURL}
+      menuLinks={menuLinks}
     >
       <Introduction profileImage={gatsbyImageData} />
       <CategoryList
@@ -100,6 +96,10 @@ export const getPostList = graphql`
         title
         description
         siteUrl
+        menuLinks {
+          name
+          link
+        }
       }
     }
     allMarkdownRemark(

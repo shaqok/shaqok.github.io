@@ -1,16 +1,15 @@
 import React, { FunctionComponent, ReactNode } from 'react'
+import { siteMetadataType } from 'types/siteData.type'
 import styled from '@emotion/styled'
 import GlobalStyle from 'components/Common/GlobalStyle'
+import Header from './Header'
 import Footer from 'components/Common/Footer'
 import { Helmet } from 'react-helmet'
 
 type TemplateProps = {
-  title: string
-  description: string
-  url: string
   image: string
   children: ReactNode
-}
+} & siteMetadataType
 
 const Container = styled.main`
   display: flex;
@@ -21,8 +20,9 @@ const Container = styled.main`
 const Template: FunctionComponent<TemplateProps> = ({
   title,
   description,
-  url,
+  siteUrl,
   image,
+  menuLinks,
   children,
 }) => {
   return (
@@ -38,7 +38,7 @@ const Template: FunctionComponent<TemplateProps> = ({
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
         <meta property="og:image" content={image} />
-        <meta property="og:url" content={url} />
+        <meta property="og:url" content={siteUrl} />
         <meta property="og:site_name" content={title} />
 
         {/* <meta name="twitter:card" content="summary" />
@@ -51,6 +51,7 @@ const Template: FunctionComponent<TemplateProps> = ({
         <html lang="ko" />
       </Helmet>
       <GlobalStyle />
+      <Header menuLinks={menuLinks} siteTitle={title} />
       {children}
       <Footer />
     </Container>
