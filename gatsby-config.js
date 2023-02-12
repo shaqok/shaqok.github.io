@@ -9,10 +9,16 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Daeyeon's Dev Blog`,
+    title: `daniel-dev`,
     description: `Daeyeon's Dev Blog`,
     author: `Daeyeon Kim`,
     siteUrl: `https://shaqok.github.io/`,
+    menuLinks: [
+      {
+        name: 'about',
+        link: '/about'
+      },
+    ]
   },
   plugins: [
     {
@@ -25,7 +31,7 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-plugin-emotion`,
     `gatsby-plugin-dark-mode`,
-    `gatsby-plugin-react-helmet`,
+    // `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
