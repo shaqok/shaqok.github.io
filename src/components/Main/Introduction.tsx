@@ -12,7 +12,6 @@ type IntroductionProps = {
 
 const Background = styled.div`
   width: 100%;
-  // background-image: linear-gradient(600deg, #29323c 0%, #485563 100%);
   background: linear-gradient(
     180deg,
     rgba(69, 69, 69, 1) 85%,
@@ -26,15 +25,15 @@ const Background = styled.div`
 const Wrapper = styled.div`
   display: flex;
   flex-direction: row;
-  flex: 1 1;
   align-items: center;
+  justify-content: center;
   width: 768px;
-  height: 400px;
+  height: 350px;
   margin: 0 auto;
 
   @media (max-width: 768px) {
     width: 100%;
-    height: 300px;
+    height: 250px;
     padding: 0 20px;
   }
 `
@@ -84,11 +83,10 @@ const IconTextWrapper = styled.a`
   margin-top: 15px;
 
   @media (max-width: 768px) {
-    font-size: 15px;
+    font-size: 14px;
   }
 
   &:hover {
-    // border-bottom: ;
     color: rgba(143, 254, 191, 1);
   }
 `
@@ -126,7 +124,7 @@ const Introduction: FunctionComponent<IntroductionProps> = ({
             target="_blank"
           >
             <IconWrapper icon={faLinkedin} />
-            <div>Daeyeon Kim</div>
+            <div>Daniel Daeyeon Kim</div>
           </IconTextWrapper>
         </PorfileRightWrapper>
       </Wrapper>
