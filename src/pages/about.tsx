@@ -19,7 +19,7 @@ type AboutPageProps = {
 const About: FC<AboutPageProps> = ({
   data: {
     site: {
-      siteMetadata: { title, description, siteUrl, menuLinks },
+      siteMetadata: { siteTitle, description, siteUrl, menuLinks },
     },
     file: {
       childImageSharp: { gatsbyImageData },
@@ -29,7 +29,8 @@ const About: FC<AboutPageProps> = ({
 }) => {
   return (
     <Template
-      title={title}
+      siteTitle={siteTitle}
+      title={siteTitle}
       description={description}
       siteUrl={siteUrl}
       image={publicURL}
@@ -46,7 +47,7 @@ export const getAboutPage = graphql`
   query getAboutPageQuery {
     site {
       siteMetadata {
-        title
+        siteTitle
         description
         siteUrl
         menuLinks {

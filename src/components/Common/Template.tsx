@@ -7,6 +7,7 @@ import Footer from 'components/Common/Footer'
 import { Helmet } from 'react-helmet'
 
 type TemplateProps = {
+  title: string
   image: string
   children: ReactNode
 } & siteMetadataType
@@ -18,6 +19,7 @@ const Container = styled.main`
 `
 
 const Template: FunctionComponent<TemplateProps> = ({
+  siteTitle,
   title,
   description,
   siteUrl,
@@ -51,7 +53,7 @@ const Template: FunctionComponent<TemplateProps> = ({
         <html lang="ko" />
       </Helmet>
       <GlobalStyle />
-      <Header menuLinks={menuLinks} siteTitle={title} />
+      <Header menuLinks={menuLinks} siteTitle={siteTitle} />
       {children}
       <Footer />
     </Container>

@@ -4,6 +4,7 @@ import Template from 'components/Common/Template'
 import PostHead from 'components/Post/PostHead'
 import PostContent from 'components/Post/PostContent'
 import CommentWidget from 'components/Post/CommentWidget'
+import { menuLinkType } from 'types/siteData.type.ts'
 
 export type PostPageItemType = {
   node: {
@@ -13,6 +14,12 @@ export type PostPageItemType = {
 }
 
 type PostTemplateProps = {
+  site: {
+    siteMetadata: {
+      siteTitle: string
+      menuLinks: menuLinkType[]
+    }
+  }
   data: {
     allMarkdownRemark: {
       edges: PostPageItemType[]
@@ -25,6 +32,7 @@ type PostTemplateProps = {
 
 const PostTemplate: FunctionComponent<PostTemplateProps> = ({
   data: {
+    site: { siteMetadata: { siteTitle, menuLinks } },
     allMarkdownRemark: { edges }
   },
   location: { href },  
@@ -46,7 +54,14 @@ const PostTemplate: FunctionComponent<PostTemplateProps> = ({
   } = edges[0]
 
   return (
-    <Template title={title} description={summary} url={href} image={publicURL}>
+    <Template 
+      siteTitle={siteTitle} 
+      title={title} 
+      description={summary} 
+      siteUrl={href} 
+      image={publicURL} 
+      menuLinks={menuLinks}
+    >
       <PostHead 
         title={title}
         date={date}
@@ -63,6 +78,15 @@ export default PostTemplate
 
 export const queryMarkdownDataBySlug = graphql`
   query queryMarkdownDataBySlug($slug: String) {
+    site {
+      siteMetadata {
+        siteTitle
+        menuLinks {
+          name
+          link
+        }
+      }
+    }
     allMarkdownRemark(filter: { fields: { slug: { eq: $slug } } }) {
       edges {
         node {

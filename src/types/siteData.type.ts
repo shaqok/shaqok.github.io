@@ -4,7 +4,7 @@ export type menuLinkType = {
 }
 
 export type siteMetadataType = {
-  title: string
+  siteTitle: string
   description: string
   siteUrl: string
   menuLinks: menuLinkType[]

@@ -31,7 +31,7 @@ const IndexPage: FunctionComponent<IndexPageProps> = ({
   location: { search },
   data: {
     site: {
-      siteMetadata: { title, description, siteUrl, menuLinks },
+      siteMetadata: { siteTitle, description, siteUrl, menuLinks },
     },
     allMarkdownRemark: { edges },
     file: {
@@ -71,7 +71,8 @@ const IndexPage: FunctionComponent<IndexPageProps> = ({
 
   return (
     <Template
-      title={title}
+      siteTitle={siteTitle}
+      title={siteTitle}
       description={description}
       siteUrl={siteUrl}
       image={publicURL}
@@ -93,7 +94,7 @@ export const getPostList = graphql`
   query getPostList {
     site {
       siteMetadata {
-        title
+        siteTitle
         description
         siteUrl
         menuLinks {
