@@ -9,7 +9,7 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `daniel-dev`,
+    siteTitle: `daniel-dev`,
     description: `Daeyeon's Dev Blog`,
     author: `Daeyeon Kim`,
     siteUrl: `https://shaqok.github.io/`,
