@@ -27,7 +27,6 @@ const About: FC<AboutPageProps> = ({
     },
   },
 }) => {
-  console.log('menuLinks in about: ', menuLinks)
   return (
     <Template
       title={title}

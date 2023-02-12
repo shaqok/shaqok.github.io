@@ -45,7 +45,6 @@ const SiteTitleText = styled.h1`
 `
 
 const Header: FunctionComponent<HeaderProps> = ({ menuLinks, siteTitle }) => {
-  console.log('menuLinks:', menuLinks)
   return (
     <HeaderWrapper>
       <NavWrapper>
