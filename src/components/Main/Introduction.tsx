@@ -82,12 +82,32 @@ const IconTextWrapper = styled.a`
   font-size: 18px;
   margin-top: 15px;
 
+  // underline animation
+  position: relative;
+  color: #ffffff;
+  text-decoration: none;
+  width: fit-content;
+
   @media (max-width: 768px) {
     font-size: 14px;
   }
 
-  &:hover {
-    color: rgba(143, 254, 191, 1);
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+
+  &:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
   }
 `
 
