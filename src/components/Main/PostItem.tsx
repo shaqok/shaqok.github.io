@@ -14,8 +14,11 @@ const PostItemWrapper = styled(Link)`
   transition: 0.3s box-shadow;
   cursor: pointer;
 
+  color: var(--text-color);
+
   &:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: var(--text-color);
+    box-shadow: 0 0 10px var(--shadow-color);
   }
 `
 

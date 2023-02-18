@@ -24,6 +24,7 @@ const CategoryListWrapper = styled.div`
   flex-wrap: wrap;
   width: 768px;
   margin: 100px auto 0;
+  color: var(--text-color);
 
   @media (max-width: 768px) {
     width: 100%;
@@ -42,12 +43,35 @@ const CategoryItem = styled(({ active, ...props }: GatsbyLinkProps) => (
   font-weight: ${({ active }) => (active ? '800' : '400')};
   cursor: pointer;
 
+  // underline animation
+  position: relative;
+  text-decoration: none;
+  width: fit-content;
+
   &:last-of-type {
     margin-right: 0;
   }
 
   @media (max-width: 768px) {
     font-size: 15px;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.88);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+
+  &:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
   }
 `
 

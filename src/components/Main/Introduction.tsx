@@ -12,13 +12,6 @@ type IntroductionProps = {
 
 const Background = styled.div`
   width: 100%;
-  background: linear-gradient(
-    180deg,
-    rgba(69, 69, 69, 1) 85%,
-    rgba(128, 128, 128, 1) 90%,
-    rgba(179, 179, 179, 1) 93%,
-    rgba(255, 255, 255, 1) 100%
-  );
   color: #ffffff;
 `
 
@@ -54,6 +47,7 @@ const PorfileRightWrapper = styled.div`
   height: 55%;
   // justify-content: space-evenly;
   justify-content: flex-start;
+  color: rgba(255, 255, 255, 0.88);
 `
 
 const SubTitle = styled.div`
@@ -100,7 +94,7 @@ const IconTextWrapper = styled.a`
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.88);
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
   }
