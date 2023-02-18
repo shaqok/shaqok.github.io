@@ -51,6 +51,10 @@ const defaultStyle = css`
     background-repeat: no-repeat;
     background-position: top;
 
+    @media (max-width: 768px) {
+      background-size: 100% 300px, 100%;
+    }
+
     // --primary-color: #381696;
     // --primary-text-color: #fff;
     // --featured-bg: #493b8a;

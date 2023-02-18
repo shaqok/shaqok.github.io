@@ -25,9 +25,10 @@ const Wrapper = styled.div`
   margin: 0 auto;
 
   @media (max-width: 768px) {
-    width: 100%;
+    width: 95%;
     height: 250px;
     padding: 0 20px;
+    justify-content: flex-start;
   }
 `
 
@@ -65,7 +66,7 @@ const Title = styled.div`
   font-weight: 700;
 
   @media (max-width: 768px) {
-    font-size: 25px;
+    font-size: 20px;
   }
 `
 
