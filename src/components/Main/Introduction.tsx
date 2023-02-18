@@ -27,9 +27,7 @@ const Wrapper = styled.div`
   @media (max-width: 768px) {
     width: 95%;
     height: 250px;
-    // padding: 0 20px;
-    padding: 0 10px;
-    justify-content: flex-start;
+    padding: 0 15px;
   }
 `
 
@@ -37,9 +35,10 @@ const PorfileLeftWrapper = styled.div`
   display: flex;
   flex-direction: column;
   width: 40%;
+  align-items: center;
 
   @media (max-width: 768px) {
-    width: 40%;
+    width: 50%;
   }
 `
 
@@ -47,9 +46,9 @@ const PorfileRightWrapper = styled.div`
   display: flex;
   flex-direction: column;
   height: 55%;
-  // justify-content: space-evenly;
   justify-content: flex-start;
   color: rgba(255, 255, 255, 0.88);
+  padding-left: 40px;
 `
 
 const SubTitle = styled.div`
@@ -86,6 +85,7 @@ const IconTextWrapper = styled.a`
 
   @media (max-width: 768px) {
     font-size: 14px;
+    width: 100%;
   }
 
   &::after {
