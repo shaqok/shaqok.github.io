@@ -27,7 +27,8 @@ const Wrapper = styled.div`
   @media (max-width: 768px) {
     width: 95%;
     height: 250px;
-    padding: 0 20px;
+    // padding: 0 20px;
+    padding: 0 10px;
     justify-content: flex-start;
   }
 `
@@ -38,7 +39,7 @@ const PorfileLeftWrapper = styled.div`
   width: 40%;
 
   @media (max-width: 768px) {
-    width: 60%;
+    width: 40%;
   }
 `
 
